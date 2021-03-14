@@ -1,5 +1,5 @@
 -- Written by Alex Metcalfe
--- Developed and tested on 8.0.23
+-- Developed and tested on MySQL 8.0.23
 
 -- Use table name as parameter to create CDC table.
 
