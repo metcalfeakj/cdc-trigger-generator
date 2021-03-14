@@ -39,7 +39,8 @@ BEGIN
                                              )
                                          else '' END))
                FROM INFORMATION_SCHEMA.COLUMNS
-               WHERE TABLE_NAME = 'party'),
+               WHERE TABLE_NAME = @tableName
+                             and TABLE_SCHEMA = @schemaName),
               '
                             ));end;') as code
 FROM (SELECT 'INS' as col1, 'AFTER INSERT' as col2
